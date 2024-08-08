@@ -33,15 +33,15 @@ nav .fa-solid {
 }
 
 .nav-background {
-    z-index: 2;
+    z-index: 20;
     width: 100%;
     background-image: url(Images/nav.svg);
     background-size: cover;
     background-position: center;
 }
 
-.video {
-    z-index: -1;
+.image {
+    z-index: -100;
     width: 100%;
 }
 
@@ -83,6 +83,52 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 75%;
 }
+
+/* ---- NOVO ----*/
+.hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image .image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.btn-contact {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}
+
+
+
 
 /* ----- About ----- */
 #about {
@@ -168,8 +214,7 @@ nav ul li a:hover::after {
 
 #modal button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.5%;
     font-size: 18px;
     color: #fff;
     background: none;
@@ -178,11 +223,15 @@ nav ul li a:hover::after {
 }
 
 .modal-prev-button {
-    left: 20px;
+    left: 1%;
 }
 
 .modal-next-button {
-    left: 1780px;
+    left: 92%;
+}
+
+.button{
+    left: 98%;
 }
 
 #gallery h1 {
@@ -305,10 +354,55 @@ nav ul li a:hover::after {
 
     }
 
-    /* ----- Video ----- */
-    video {
+    /* ---- NOVO ----*/
+.hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image .image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.hero-text h1 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.btn-contact {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}
+
+
+
+    /* ----- Image ----- */
+    .image {
+        z-index: -1;
         width: 100%;
-        height: auto;
     }
 
     /* ----- About ----- */
@@ -395,8 +489,7 @@ nav ul li a:hover::after {
 
     #modal button {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 1%;
         font-size: 18px;
         color: #fff;
         background: none;
@@ -405,11 +498,15 @@ nav ul li a:hover::after {
     }
 
     .modal-prev-button {
-        left: 10px;
+        left: 1%;
     }
 
     .modal-next-button {
-        left: 280px;
+        left: 71%;
+    }
+
+    .button{
+        left: 96%;
     }
 
     #gallery h1 {

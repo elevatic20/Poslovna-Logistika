@@ -9,8 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="style.css">
 
+    <meta name="description" content="Poslovna logistika ČokoLand - Nacionalna distribucija robe široke potrošnje u Hrvatskoj i Sloveniji.">
+    <meta name="keywords" content="poslovna logistika, distribucija, roba široke potrošnje, Hrvatska, Slovenija, ČokoLand">
+    <meta name="robots" content="index, follow">
+
+
+    <link rel="stylesheet" href="style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -31,10 +36,10 @@
                 <nav class="navigation-bar">
                     <img src="images/logo.png" class="logo" alt="">
                     <ul id="sideMenu">
-                        <li><a href="#header">Početna</a></li>
-                        <li><a href="#about">O nama</a></li>
-                        <li><a href="#gallery">Galerija</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a href="#header" onclick="closeMenu()">Početna</a></li>
+                        <li><a href="#about" onclick="closeMenu()">O nama</a></li>
+                        <li><a href="#gallery" onclick="closeMenu()">Galerija</a></li>
+                        <li><a href="#contact" onclick="closeMenu()">Kontakt</a></li>
                         <i class="fa-solid fa-angle-right" onclick="closeMenu()"></i>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openMenu()"></i>
@@ -42,12 +47,17 @@
             </div>
 
         </div>
+        
 
-        <!-- ----- Video autoplay loop ------ -->
-        <video src="Images/video.mp4" autoplay loop preload muted>
-            Your browser does not support the video tag.
-        </video>
-
+        <!-- ----- Image ------ -->
+        <div class="hero-image">
+            <img class="image" src="Images/IMG_2303.jpg" alt="Pozadinska Slika">
+                <div class="hero-text">
+                    <h1>POSLOVNA LOGISTIKA </h1>
+                        <h1>ČOKOLAND</h1>
+                        <a href="#contact" class="btn-contact">Kontakt</a>
+                </div>
+        </div>
     </div>
 
 
@@ -98,7 +108,7 @@
         <button class="modal-prev-button" onclick="showPrevImage()">&#8249; Prethodna</button>
         <button class="modal-next-button" onclick="showNextImage()">Sljedeća &#8250;</button>
 
-        <button onclick="closeModal()">X</button>
+        <button class="button" onclick="closeModal()">X</button>
         <img id="modalImage">
     </div>
 
@@ -109,7 +119,7 @@
             <div class="row-2">
                 <div class="colu-1">
                     <h5><b>Čokoland d.o.o.</b></h5>
-                    <p>Jug II, 10  40323 Prelog</p>
+                    <p>Jug II, 10  40323 Prelog</p>
                     <p><b>OIB:</b> 94207387415</p>
                     <p><b>MB:</b> 2830710</p>
                     <br>
